@@ -1,0 +1,129 @@
+.content {
+
+    display: inline;
+}
+
+.slideShow {
+
+    background: linear-gradient(to left, #b2fefa, #0ed2f7);
+    height: 500px;
+
+}
+
+.leftArrow {
+
+    float: left;
+    font-size: 100px;
+    background: none;
+    font-weight: 700;
+    color: #b2fefa;
+    text-shadow: 0 -3px 5px black;
+    height: 100%;
+    border: none
+
+}
+.rightArrow {
+
+    float: right;
+    font-size: 100px;
+    background: none;
+    font-weight: 700;
+    color: #0ed2f7;
+    text-shadow: 0 -3px 5px black;
+    height: 100%;
+    border: none
+
+}
+.leftArrow:active{
+
+    float: left;
+    font-size: 90px;
+    background: none;
+    font-weight: 700;
+    color: #b2fefa;
+    text-shadow: 0 -3px 5px black;
+    height: 100%;
+    border: none
+
+}
+
+.rightArrow:active {
+
+    float: right;
+    font-size: 90px;
+    background: none;
+    font-weight: 700;
+    color: #0ed2f7;
+    text-shadow: 0 -3px 5px black;
+    height: 100%;
+    border: none
+
+}
+
+.imageBlock{
+    max-width: 100%;
+    z-index: 1;
+   
+}
+.images{
+    width:1000px;
+    height:500px;
+    color: #0ed2f7;
+}
+
+@media only screen and (max-width: 576px) { 
+	.leftArrow {
+
+        float: left;
+        font-size: 60px;
+        background: none;
+        font-weight: 700;
+        color: #b2fefa;
+        text-shadow: 0 -3px 5px black;
+        height: 100%;
+        border: none;
+        opacity:1;
+        margin-left: 10px;
+    
+    }
+    .rightArrow {
+    
+        float: right;
+        font-size: 60px;
+        background: none;
+        font-weight: 700;
+        color: #0ed2f7;
+        text-shadow: 0 -3px 5px black;
+        height: 100%;
+        border: none;
+        opacity:1;
+    
+    }
+    .leftArrow:active{
+    
+        float: left;
+        font-size: 50px;
+        background: none;
+        font-weight: 700;
+        color: #b2fefa;
+        text-shadow: 0 -3px 5px black;
+        height: 100%;
+        border: none;
+        opacity:1;
+    
+    }
+    
+    .rightArrow:active {
+    
+        float: right;
+        font-size: 50px;
+        background: none;
+        font-weight: 700;
+        color: #0ed2f7;
+        text-shadow: 0 -3px 5px black;
+        height: 100%;
+        border: none;
+        opacity:1;
+    
+    }
+}

@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="grid">
+        <div class=" row content">
+            <header>
+                <div class="w-100 h-20 fixed-top
+         text-center text-primary border-bottom " style="background: linear-gradient(to right, #b2fefa, #0ed2f7);">
+                    <h1 class="text-Capitaliza">Suvidha Light House</h1>
+                </div>
+            </header>
+        </div>
+        <div class="row content">
+            <div class="w-100 slideShow">
+                <div ng2-carouselamos class="slide-wrapper" [items]="items" [width]="900" [$prev]="prev" [$next]="next"
+                [$item]="item">
+
+                <ng-template #prev>
+                    <button class="leftArrow">&lt;</button>
+                </ng-template>
+                <ng-template #next> 
+                    <button class="rightArrow">&gt;</button>
+                </ng-template>
+                <ng-template #item let-item let-i="index">
+                    <div class="imageBlock">
+                        <img src="{{item.name}}" class="images">
+                    </div>
+                  
+                </ng-template>
+            </div>
+                
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
