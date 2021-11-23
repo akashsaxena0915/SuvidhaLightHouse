@@ -1,0 +1,11 @@
+ .show{
+    transition: opacity .15s linear;
+}
+
+.modal-header, .modal-footer {
+    justify-content: space-evenly;
+} 
+
+.modal-body{
+    text-align: justify;
+}

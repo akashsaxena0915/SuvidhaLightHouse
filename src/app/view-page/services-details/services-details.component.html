@@ -1,0 +1,21 @@
+<div class="modal show" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h4 class="modal-title">{{description.name}}</h4>
+            </div>
+            <div class="modal-body">
+                <p>{{description.desc}}</p>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="closePopup()">
+                    Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  

@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewPageComponent } from './view-page/view-page.component';
 import { Ng2CarouselamosModule } from 'ng2-carouselamos';
+import { ServicesDetailsComponent } from './view-page/services-details/services-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ViewPageComponent
+    ViewPageComponent,
+    ServicesDetailsComponent
   ],
   imports: [
     BrowserModule,

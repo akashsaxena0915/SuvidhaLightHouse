@@ -2,3 +2,6 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 
 
+body{
+    background-color: rgb(229, 246, 248);
+}

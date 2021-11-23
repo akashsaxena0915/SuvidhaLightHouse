@@ -1,3 +1,4 @@
+
 .content {
 
     display: inline;
@@ -9,6 +10,8 @@
     height: 500px;
 
 }
+
+
 
 .leftArrow {
 
@@ -71,7 +74,34 @@
     color: #0ed2f7;
 }
 
+.cardButton{
+    background: none;
+    border: none
+}
+
+.headingText{
+    font-weight: 300;
+}
+
+.modal{
+    display: block;
+}
+.contactDetailContainer{
+    border-right: solid 1px #d4cfcf;
+    overflow-wrap: break-word;
+}
+.cardColor{
+    background-color: rgb(184, 242, 248);
+}
+
 @media only screen and (max-width: 576px) { 
+    .contactDetailsBorder{
+        border-bottom: solid 1px #d4cfcf;
+    }
+    .contactDetailContainer{
+    
+        overflow-wrap: break-word;
+    }
 	.leftArrow {
 
         float: left;
