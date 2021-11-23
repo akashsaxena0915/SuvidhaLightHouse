@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewPageComponent } from './view-page/view-page.component';
-import { Ng2CarouselamosModule } from 'ng2-carouselamos';
 import { ServicesDetailsComponent } from './view-page/services-details/services-details.component';
 
 @NgModule({
@@ -14,8 +13,7 @@ import { ServicesDetailsComponent } from './view-page/services-details/services-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    Ng2CarouselamosModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
