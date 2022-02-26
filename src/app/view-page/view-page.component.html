@@ -10,12 +10,18 @@
     </div>
     <div class="row content">
       <div class="w-100 slideShow">
-      
+        <div class="imageContainer">
+          <div class="imageBlock">
+            <img src="{{items[this.item].name}}" alt="">
+          </div>
+        </div>
 
+        <button class="leftArrow" (click)="changeImage('left')">&lt;</button>
+        <button class="rightArrow" (click)="changeImage('right')">&gt;</button>
       </div>
 
     </div>
-    <div class="content" >
+    <div class="content">
       <h1 class="text-center headingText">Our Services</h1>
       <div class=" row offset-1" style="padding-left: 10px;">
         <div class="card cardColor" style="width: 18rem; margin-bottom: 10px; margin-right: 5px;"
@@ -38,7 +44,7 @@
       <h1 class="headingText text-center">Reach to us</h1>
 
 
-      <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6 mb-4 contactDetailContainer"  >
+      <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6 mb-4 contactDetailContainer">
         <h4 class="headingText text-center">Contact Details</h4>
         <div class="row contactDetailsBorder">
           <span class="col-6">Name:</span>
@@ -49,10 +55,10 @@
           <span class="col-6">123456987</span>
         </div>
         <div class="row contactDetailsBorder">
-         <span class="col-6">Address</span>
+          <span class="col-6">Address</span>
           <span class="col-6">house no. 111, Vishwas colony, bandra, Moradabad, Uttarpradehs,125487</span>
         </div>
- 
+
 
 
       </div>

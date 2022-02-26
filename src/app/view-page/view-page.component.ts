@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { of } from 'rxjs';
 import { ServiceDescService } from '../services/service-desc.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { ServiceDescService } from '../services/service-desc.service';
 export class ViewPageComponent implements OnInit {
   items: Array<any> = [];
   cardsData: Array<any> = [];
+  item=0;
   showPopup:boolean=false;
   poupCarryDate: { name: string, desc: string, status: boolean}={name:'',desc:'',status:false};
   constructor(readonly Servicedescesrvice:ServiceDescService) { }
@@ -20,7 +22,6 @@ export class ViewPageComponent implements OnInit {
       { name: 'assets/images/3.jpg' },
       { name: 'assets/images/5.jpg' }
     ];
-
     this.cardsData = [
       {
         imgUrl: "https://mdbootstrap.com/img/new/standard/nature/182.jpg",
@@ -73,6 +74,22 @@ export class ViewPageComponent implements OnInit {
   }
   changepopUpStatus(event:Event){
     this.showPopup=false;
+  }
+
+  changeImage(dir:string){
+    if(dir === 'right'){
+      if(this.item === this.items.length-1){
+        this.item=0;
+      }else{
+        ++this.item;
+      }
+    }else{
+      if(this.item === 0){
+        this.item=this.items.length-1;
+      }else{
+        --this.item;
+      }
+    }
   }
 
 }
